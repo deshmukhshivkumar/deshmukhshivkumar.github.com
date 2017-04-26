@@ -1,17 +1,10 @@
 <html>
 <head>
     <title>
-        CT Transit Fastrak Application
+		XSS Demo
     </title>
-	<script type="text/javascript" src="Scripts/jquery-3.1.0.min.js"> </script>
-	<script type="text/javascript" src="Scripts/bootstrap.js"> </script>
-	<script type="text/javascript" src="Scripts/SearchLocations.js"> </script>
-	<script type="text/javascript" src="Scripts/bootstrap3-typeahead.min.js"> </script>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-	<!-- ToDo: Change the API key -->
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKCfeZWk7iA9OXoLSWVpUfXoLm2ekRvgg&callback=initMap"></script>
-	<style>
+	<script type="text/javascript" src="jquery-3.1.0.min.js"> </script>
+	<script type="text/javascript" src="AuthStealer.js"> </script>
 		.searchclear {
 			position: absolute;
 			right: 20px;
@@ -29,43 +22,6 @@
 	</style>
 </head>
 <body>
-    <div>
-        <div class="panel panel-info">
-            <div class="panel-heading">
-			<strong class='lead text-center'>CT Fastrak Search Application</strong></div>
-            <div class="panel-body">
-                <form name="userCreationForm" 
-                      class="form-horizontal" role="form" novalidate>
-                    <div class="form-group">
-                        <label for="inputFromLocation" class="col-sm-1 control-label">From</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control"
-							id="inputFromLocation" 
-							name="inputFromLocation"
-							placeholder="From"
-							autocomplete="off"/>
-							<span id="clearFromLocation" class="glyphicon glyphicon-remove-circle col-sm-1 searchclear"></span>
-                        </div>
-						
-						<label for="inputToLocation" class="col-sm-1 control-label">To</label>
-                        <div class="col-sm-3">
-                            <input type="text" class="form-control"
-							id="inputToLocation" 
-							name="inputToLocation"
-							placeholder="To"
-							autocomplete="off"/>
-						<span id="clearToLocation" class="glyphicon glyphicon-remove-circle col-sm-1 searchclear"></span>
-                        </div>
-						
-						<button type="submit" class="btn btn-md btn-primary col-sm-2">Search</button>
-					</div>
-                    
-                </form>
-            </div>
-        </div>		
-		<div id="divTransitMap" class="map">
-			
-		</div>		
-    </div>
+	
 </body>
 </html>
