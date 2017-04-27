@@ -16,7 +16,6 @@ function RetrieveCookie(key , callback){
 	var url = "https://api.mlab.com/api/1/databases/transit/collections/Cookie?q={key:'"+ key + "'}&apiKey=jnvApBWjlMBlhq5wSSI0d7wwJLHV4IM8";
 	$.getJSON(url).done(function (response) {
 		if(response != undefined && response.length != 0){
-			console.log("Sync : " + response[response.length - 1 ].value);
 			callback(response[response.length - 1 ].value);
 		}		
 	}).fail(function(){
@@ -39,10 +38,10 @@ function RetrieveCookie(key , callback){
 	}
 	
 	RetrieveCookie("username", function(response){
-		console.log("Callback : " + response);
+		console.log("username : " + response);
 	});	
 	
 	RetrieveCookie("password", function(response){
-		console.log("Callback : " + response);
+		console.log("password : " + response);
 	});	
 });
