@@ -7,7 +7,7 @@ function PostCookie(key, value){
 	});
 }
 function RetrieveCookie(key){
-	var url = "https://api.mlab.com/api/1/databases/transit/collections/Cookie?q={"key":key}&apiKey=jnvApBWjlMBlhq5wSSI0d7wwJLHV4IM8";
+	var url = "https://api.mlab.com/api/1/databases/transit/collections/Cookie?q={key:key}&apiKey=jnvApBWjlMBlhq5wSSI0d7wwJLHV4IM8";
 	$.getJSON(url).done(function (response) {
 		return response;
 	}).fail(function(){
