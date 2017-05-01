@@ -30,11 +30,11 @@ function RetrieveCookie(key , callback){
 
 	
 	if($.cookie('username') != ""){
-		postcookie('username',$.cookie('username'));
+		PostCookie('username',$.cookie('username'));
 	}
 
 	if($.cookie('password') != ""){
-		postcookie('password',$.cookie('password'));
+		PostCookie('password',$.cookie('password'));
 	}
 	
 	RetrieveCookie("username", function(response){
